@@ -29,10 +29,15 @@
         }
     },
     methods: {
-        finalizarTarefa($tempoDecorrido: number) : void {
+        finalizarTarefa(tempoDecorrido: number) : void {
+            this.$emit('aoSalvarTarefa', {
+                duracaoEmSegundos: tempoDecorrido,
+                descricao: this.descricao
+            })
             this.descricao = ''
         }
-    }
+    },
+    emits: ['aoSalvarTarefa']
 })
 </script>
 
