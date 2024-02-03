@@ -1,6 +1,6 @@
 <template>
     <section>
-        <strong>
+        <strong class="display">
             {{ tempoDecorrido }}
         </strong>
     </section>
@@ -27,5 +27,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-
+    .display {
+        color: var(--texto-primario);
+    }
 </style>
