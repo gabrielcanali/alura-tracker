@@ -12,11 +12,10 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import BarraLateral from './components/BarraLateral.vue';
-import { RouterView } from 'vue-router';
 
 export default defineComponent({
     name: 'App',
-    components: { BarraLateral, RouterView },
+    components: { BarraLateral },
     data () {
       return {
         modoEscuroAtivo: false
