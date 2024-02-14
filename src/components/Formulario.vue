@@ -46,9 +46,8 @@ export default defineComponent({
                 this.store.commit(NOTIFICAR, {
                     titulo: 'Atenção!',
                     texto: 'A tarefa não possuí um projeto vinculado',
-                    tipo: TipoNotificacao.FALHA
+                    tipo: TipoNotificacao.ATENCAO
                 })
-                return;
             }
             this.$emit('aoSalvarTarefa', {
                 duracaoEmSegundos: tempoDecorrido,

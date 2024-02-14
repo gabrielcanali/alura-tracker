@@ -29,7 +29,7 @@ export const store = createStore<Estado>({
             state.projetos[index] = projeto
         },
         [EXCLUIR_PROJETO](state, id: string) {
-            state.projetos.filter(proj => proj.id !== id)
+            state.projetos = state.projetos.filter(proj => proj.id !== id)
         },
         [NOTIFICAR](state, novaNotificacao: INotificacao) {
             novaNotificacao.id = new Date().getTime()

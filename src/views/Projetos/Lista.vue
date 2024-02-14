@@ -49,7 +49,7 @@
 <script lang="ts">
     import { defineComponent, computed } from 'vue'
     import { useStore } from '@/store'
-import { EXCLUIR_PROJETO } from '@/store/tipo-mutacoes'
+    import { EXCLUIR_PROJETO } from '@/store/tipo-mutacoes'
 
     export default defineComponent({
         name: 'Lista',  
